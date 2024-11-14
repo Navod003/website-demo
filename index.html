@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="C-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/39c5e997a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/newlogo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Website Developer</p>
+            <h1>Hi, I'm <span>Navod</span><br> Dilshara from Srilanka</h1>
+        </div>
+    </div>
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/about.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm a passionate web developer dedicated to building clean, efficient, and user-friendly websites. With experience in front-end and back-end development, I create custom solutions that help businesses and individuals bring their ideas to life online. My skills include HTML, CSS, JavaScript, and popular frameworks like React and Node.js. I’m committed to delivering high-quality work that not only meets but exceeds client expectations. Let’s work together to make your website vision a reality!
+
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>App Development</span><br>Building Android/iOS apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023 - Current</span><br>UI/UX Design Training at ABC Institute.</li>
+                        <li><span>2021 - 2023</span><br>Team lead at UbiApp LLC.</li>
+                        <li><span>2019 - 2021</span><br>Internship at SLTC eCommerce.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021</span><br>UI/UX Design Training at ABC Institute.</li>
+                        <li><span>2020</span><br>BSE from SLTC SriLanka.</li>
+                        <li><span>2018</span><br>MBA from XYZ SriLanka.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Web design combines visual appeal and functionality to create user-friendly, responsive websites. 
+                    Key elements include layout, color, typography, and interactivity, all aimed at providing a seamless user experience. 
+                    Good design enhances credibility, engages users, and supports business goals.</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>UI/UX design creates intuitive and engaging digital experiences by blending visual appeal (UI) with usability and satisfaction (UX). 
+                    It aims to make interfaces aesthetically pleasing and highly functional for a smooth user experience across devices.</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>App design combines UI and UX elements to create visually appealing, intuitive, and responsive applications. 
+                    It ensures compatibility across devices, making navigation easy and enhancing user satisfaction.</p>
+                <a href="#">learn more</a>
+            </div>
+
+        </div>
+    </div>
+      
+</div>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.jpg">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>Stay close to what matters. Our app makes connecting easy and fun—share, chat, and explore, all in one place!
+                        Download now and be part of something big. </p>
+                        <a href="#"><i class="fa-solid fa-link"></i>"></i></a>
+                </div>
+                
+            </div>
+            <div class="work">
+                <img src="images/work2.jpg">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>Your music, your way. 🎶 Discover, play, and vibe all in one app.
+                         #FeelTheBeat </p>
+                        <a href="#"><i class="fa-solid fa-link"></i>"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work3.jpg">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>Everything you want, just a tap away! 🛒 Shop smarter, faster, and easier.
+                         #ShopNow #FindItAl </p>
+                        <a href="#"><i class="fa-solid fa-link"></i>"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>kpndashokaratne@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+94710952469</p>
+                <div class="social-icons">
+                    <a href="https://web.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/new cv my 12.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p><i class="fa-regular fa-copyright"></i> Copyright Navod.</p>
+    </div>
+</div>
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+</script>
+<script>
+    var sidemen = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemen.style.right = "0";
+    }
+    function closemenu(){
+        sidemen.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxYQeT2t1_AikvxBJuIAfRlhruDsAAQ2UtfMHa4-FS-qKLjjDrqUcuAhp3gyQ4Xqr8l/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""               
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
